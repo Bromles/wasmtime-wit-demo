@@ -1,0 +1,10 @@
+package my:plugin;
+
+interface host-api {
+    greet: func(name: string) -> string;
+}
+
+world plugin-world {
+    import host-api;
+    export run: func() -> string;
+}

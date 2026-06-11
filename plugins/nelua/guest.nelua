@@ -1,0 +1,15 @@
+##[[
+cflags "-O2 -DNELUA_STATIC_ASSERT(X,Y)="
+ldflags "-Wl,--no-entry -Wl,--export=exports_plugin_world_run"
+context.rootpragmas.nogcentry = true
+context.rootpragmas.abort = "trap"
+]]
+
+local function host_greet(name: pointer, ret: pointer): void <cimport 'my_plugin_host_api_greet'> end
+local function string_set(ret: pointer, s: cstring): void <cimport 'plugin_world_string_set'> end
+
+local function run(ret: pointer): void <cexport, codename 'exports_plugin_world_run'>
+  local buf: array(uint8, 16) = {}
+  string_set(&buf[0], "Nelua")
+  host_greet(&buf[0], ret)
+end

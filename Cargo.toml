@@ -1,0 +1,9 @@
+[package]
+name = "wasmtime_challenges"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0"
+wasmtime = { version = "45.0", features = ["component-model"] }
+wasmtime-wasi = "45"
