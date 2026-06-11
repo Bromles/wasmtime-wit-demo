@@ -1,4 +1,4 @@
-# wasmtime-challenges
+# wasmtime-wit-demo
 
 A demo showing how to compile some languages to [Wasm components](https://component-model.bytecodealliance.org/) and run
 them via a shared [WIT](https://component-model.bytecodealliance.org/design/wit.html) interface
