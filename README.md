@@ -26,7 +26,7 @@ cargo run -- plugins/<lang>/plugin.wasm
 | C          | `./build.sh` | wasi-libc + wit-bindgen           |
 | C++        | `./build.sh` | wasi-libc + wit-bindgen           |
 | Go         | `./build.sh` | `GOOS=wasip1` + reactor adapter   |
-| TypeScript | `./build.sh` | `jco componentize`                |
+| JavaScript | `./build.sh` | `jco componentize`                |
 | Python     | `./build.sh` | `componentize-py`                 |
 | Zig        | `./build.sh` | `zig cc` + reactor adapter        |
 | C#         | `./build.sh` | `componentize-dotnet` (Docker)    |
