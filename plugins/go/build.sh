@@ -33,15 +33,6 @@ echo "Generating Go bindings..."
 rm -f core.wasm embedded.wasm
 wit-bindgen go ../../wit --world plugin-world --out-dir .
 mkdir -p export_wit_world
-cat > export_wit_world/run.go << 'EOF'
-package export_wit_world
-
-import "wit_component/my_plugin_host_api"
-
-func Run() string {
-	return my_plugin_host_api.Greet("Go")
-}
-EOF
 go mod tidy
 
 echo "Compiling to WebAssembly..."
