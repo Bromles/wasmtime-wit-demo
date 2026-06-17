@@ -21,18 +21,19 @@ cargo run -- plugins/<lang>/plugin.wasm
 
 ## Languages
 
-| Language   | Build        | Toolchain                         |
-|------------|--------------|-----------------------------------|
-| C          | `./build.sh` | wasi-libc + wit-bindgen           |
-| C++        | `./build.sh` | wasi-libc + wit-bindgen           |
-| Go         | `./build.sh` | `GOOS=wasip1` + reactor adapter   |
-| JavaScript | `./build.sh` | `jco componentize`                |
-| Python     | `./build.sh` | `componentize-py`                 |
-| Zig        | `./build.sh` | `zig cc` + reactor adapter        |
-| C#         | `./build.sh` | `componentize-dotnet` (Docker)    |
-| Rust       | `./build.sh` | `wasm32-wasip2`                   |
-| Nelua      | `./build.sh` | Nelua → C → clang                 |
-| Nim        | `./build.sh` | Nim → C → clang + reactor adapter |
+| Language   | Build        | Toolchain                              |
+| ---------- | ------------ | -------------------------------------- |
+| C          | `./build.sh` | wasi-libc + wit-bindgen                |
+| C++        | `./build.sh` | wasi-libc + wit-bindgen                |
+| Go         | `./build.sh` | `GOOS=wasip1` + reactor adapter        |
+| JavaScript | `./build.sh` | `jco componentize`                     |
+| Python     | `./build.sh` | `componentize-py`                      |
+| Zig        | `./build.sh` | `zig cc` + reactor adapter             |
+| C#         | `./build.sh` | `componentize-dotnet` (Docker)         |
+| Rust       | `./build.sh` | `wasm32-wasip2`                        |
+| Nelua      | `./build.sh` | Nelua → C → clang                      |
+| Nim        | `./build.sh` | Nim → C → clang + reactor adapter      |
+| Odin       | `./build.sh` | odin (wasi_wasm32) + reactor adapter |
 
 ## License
 

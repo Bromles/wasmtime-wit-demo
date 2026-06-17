@@ -20,4 +20,5 @@ plugins/nelua/guest.c
 .zig-cache
 plugins/nim/build
 plugins/nim/plugin_world.*
+plugins/odin/plugin_world.*
 
